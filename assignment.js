@@ -4,7 +4,7 @@ function feetToMile(feet) {
   return mile;
 }
 var result = feetToMile(5280);
-console.log(result);
+
 
 // woodCalculator
 function woodCalculator(chair, table, bed) {
@@ -17,11 +17,17 @@ function woodCalculator(chair, table, bed) {
 
 
 var woodResult = woodCalculator(1, 3, 5);
-console.log(woodResult);
+
 
 // brickCalculator
-function brickClculator() {
+function brickClculator(buliding) {
 
+  var firstFloor = 15 * 1000;
+  var secondFloor = 12 * 1000;
+  var thirdFloor = 10 * 1000;
+  var totalFloor = firstFloor + secondFloor + thirdFloor;
+  
+  return totalFloor;
 }
 
 
@@ -41,4 +47,3 @@ function tinyFriend(names) {
 }
 
 var smallestName = tinyFriend(['Rahim', 'Karim', 'Munni', 'Abul', 'Roman']);
-console.log(smallestName);
